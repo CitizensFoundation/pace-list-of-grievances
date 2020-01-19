@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../ai-training-app.js';
+
+<Meta 
+  title="AiTrainingApp"
+  parameters={{
+    component: "ai-training-app",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# AiTrainingApp
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add ai-training-app
+```
+
+```js
+import 'ai-training-app/ai-training-app.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <ai-training-app></ai-training-app>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="ai-training-app" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <ai-training-app .title=${'Hello World'}></ai-training-app>
+  `}
+</Story>
