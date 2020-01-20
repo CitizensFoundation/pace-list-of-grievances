@@ -85,9 +85,9 @@ export class YourGrievancesApp extends LitElement {
       }
 
       .paceImage {
-        margin-left: auto;
         margin-right: auto;
-        margin-top: 24px;
+        margin-top: 26px;
+        margin-left: 64px;
         margin-bottom: 16px;
       }
     `;
