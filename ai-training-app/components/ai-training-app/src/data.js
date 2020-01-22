@@ -1,7 +1,5 @@
 
-const createRandomData = (length) => {
-  return new Array(length).fill().map((a, i) =>  Math.round( Math.random()*(Math.random()*10) * 10 ) / 10).sort();
-}
+const createRandomData = (length) => new Array(length).fill().map((a, i) =>  Math.round( Math.random()*(Math.random()*10) * 10 ) / 10).sort()
 
 export const DataLabels = [
   "03/2014", "04/2014","07/2014","08/2014","09/2014","10/2014","11/2014","12/2014",

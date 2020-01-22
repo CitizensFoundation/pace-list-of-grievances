@@ -46,6 +46,32 @@ export class Grievance extends BaseElement {
           right: 16px;
           top: 16px;
         }
+
+        .contentText {
+          font-size: 16px !important;
+        }
+
+        .contentTitle {
+          font-size: 20px;
+          margin-top: 0;
+        }
+
+        .quote {
+          font-size: 14px;
+          font-style: italic;
+          padding: 16px;
+          padding-top: 0;
+        }
+
+        mwc-button {
+          margin-top: 24px;
+          margin-left: 85px;
+          margin-bottom: 32px;
+        }
+
+        mwc-textarea {
+          line-height: 1;
+        }
       `,
     ];
   }
@@ -63,17 +89,17 @@ export class Grievance extends BaseElement {
         <div class="mdc-card__primary-action">
           <div class="mdc-card__media mdc-card__media--16-9 my-media"></div>
           <div class="content">
-            <h2 class="mdc-typography--title">${this.grievanceData.title}</h2>
-            <div class="mdc-typography--body1 subtext">${this.grievanceData.description}</div>
+            <h2 class="mdc-typography--title contentTitle">${this.grievanceData.title}</h2>
+            <div class="mdc-typography--body1 subtext contentText">${this.grievanceData.description}</div>
           </div>
           <mdc-ripple></mdc-ripple>
         </div>
         ${ this.fullView ? html`
           <div class="laysout vertical">
             <mwc-icon icon="close" @click="${()=>{this.fire('close-grievance')}}"></mwc-icon>
-            <div class="quote">${this.grievanceData.quote}</div>
-            <div class="group-spsaced layout horizontal center-center">
-              <div>
+            <div class="quote">"${this.grievanceData.quote}"</div>
+            <div class="group-spsaced layout horizontal center-center" style="margin-left:auto;margin-right:auto;width:100%;margin-top:16px;">
+              <div style="width: 300px;margin-left:32px;margin-right: 174px; ">
                 <mwc-textarea outlined="" label="Your story"
                     helper="Share your story anonymously" helperpersistent=""
                     maxlength="500"
@@ -81,7 +107,8 @@ export class Grievance extends BaseElement {
                 </mwc-textarea>
                 <mwc-button raised="" label="Add story"></mwc-button>
               </div>
-              <div>
+              <div class="flex"></div>
+              <div style="width: 300px">
                 <mwc-textarea outlined="" label="Solution?"
                     helper="Can you think of a solution for the grievance" helperpersistent=""
                     maxlength="500"
