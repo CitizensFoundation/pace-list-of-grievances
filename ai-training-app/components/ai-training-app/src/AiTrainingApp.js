@@ -94,6 +94,7 @@ export class AiTrainingApp extends LitElement {
 
       mwc-button {
         width: 150px;
+        margin-bottom: 8px;
       }
     `];
   }
@@ -110,31 +111,30 @@ export class AiTrainingApp extends LitElement {
         <img style="margin-top:32px" width="151" height="95" src="https://popandce.files.wordpress.com/2019/07/cropped-pace_logo-24.png"/>
       </div>
 
-      <div style="margin-left:auto;margin:auto;margin:32px;margin-bottom:8px;font-size:38px;">Is this correct?</div>
-
       <div class="container shadow-animation shadow-elevation-3dp">
-        <div class="title" style="color: #777;">${Data[this.number].title}</div>
         <div class="quote">${Data[this.number].quote}</div>
-        <div class="group-spsaced layout horizontal center-center" style="margin-left:auto;margin-right:auto;width:100%;margin-top:16px;">
-              <div style="width: 300px;margin-left:32px;margin-right: 174px; ">
-                <mwc-textarea outlined="" label="Your story"
-                    helper="Share your story anonymously" helperpersistent=""
-                    maxlength="500"
-                    charcounter="">
-                </mwc-textarea>
-                <mwc-button style="margin-left:85px;" @click="${() => { this.number+=1;this.requestUpdate(); }}" raised="" label="Yes"></mwc-button>
-              </div>
-              <div class="flex"></div>
-              <div style="width: 300px">
-                <mwc-textarea outlined="" label="Solution?"
-                    helper="Can you think of a solution for the grievance" helperpersistent=""
-                    maxlength="500"
-                    charcounter="">
-                </mwc-textarea>
-                <mwc-button @click="${() => { this.number+=1;this.requestUpdate(); }}" raised="" label="No"></mwc-button>
-              </div>
-            </div>
+      </div>
 
+      <div class="title" style="color: #333;margin-top: 32px;">${Data[this.number].title}</div>
+      <div style="margin-left:auto;margin:auto;margin:0px;margin-bottom:32px;font-size:30px;">Is this correct theme?</div>
+      <div class="group-spsaced layout horizontal center-center" style="margin-left:auto;margin-right:auto;width:100%;margin-top:16px;">
+        <div style="width: 300px;margin-left:158px;margin-right: 84px; ">
+          <mwc-textarea outlined="" label="Your story"
+              helper="Share your story anonymously" helperpersistent=""
+              maxlength="500"
+              charcounter="">
+          </mwc-textarea>
+          <mwc-button style="margin-left:85px;" @click="${() => { this.number+=1;this.requestUpdate(); }}" raised="" label="Yes"></mwc-button>
+        </div>
+        <div class="flex"></div>
+        <div style="width: 300px">
+          <mwc-textarea outlined="" label="Solution?"
+              helper="Can you think of a solution for the grievance" helperpersistent=""
+              maxlength="500"
+              charcounter="">
+          </mwc-textarea>
+          <mwc-button @click="${() => { this.number+=1;this.requestUpdate(); }}" raised="" label="No"></mwc-button>
+        </div>
       </div>
 
     `;

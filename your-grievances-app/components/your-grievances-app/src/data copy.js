@@ -14,24 +14,12 @@ export const Data = [
   {
     currrentCount: createRandomData(DataLabels.length)[0],
     title: "Left Behind by Global Economy",
-    description: "Decades of increased globalization lifted hundreds of millions of people out of poverty and more than doubled the real wealth of the top 1%; unfortunately these gains were not shared by the middle class in the First World, who saw their wealth stagnant or in decline.",
+    description: "Decades of increased globalization lifted hundreds of millions of people out of property and more than doubled the real wealth of the top 1%; unfortunately these gains were not shared by the middle class in the First World, who saw their wealth stagnant or in decline.",
     quote: "Voters in the UK were voting against free markets and free labour, against winner takes all capitalism that pits worker against worker; marginalised against marginalised. It’s the outcome of years of austerity that saw people jobless, threatened and insecure. As economist Dani Rodrik put it succinctly “Less skilled workers in advanced countries haven’t done very well out of globalisation.",
     dataSet: {
       data: createRandomData(DataLabels.length),
       label: "Left Behind",
       borderColor: "#3e95cd",
-      fill: false
-    }
-  },
-  {
-    currrentCount: createRandomData(DataLabels.length)[0],
-    title: "Resentment of the Rising Radical Income Inequality",
-    description: "The gap between the billionaire class and the working poor is the greatest at any time in human history since the Pharaohs had their slaves build the pyramids. Despite the modern comforts the underclasses enjoy, they understand and resent this grossly unfair distribution of economic power.",
-    quote: "You get an elite who think they did it all on their own and they deserve their position, and the people who didn’t pass exams and feel left behind. First they think the system is rigged which is a reasonable thing to think and then also partway blame themselves,” he says.“We’ve created this meritocratic aristocracy and people who didn’t make it are pissed off.",
-    dataSet: {
-      data: createRandomData(DataLabels.length),
-      label: "Inequality",
-      borderColor: "#8ea25e",
       fill: false
     }
   },
@@ -44,6 +32,18 @@ export const Data = [
       data: createRandomData(DataLabels.length),
       label: "Not Listened To",
       borderColor: "#05c458",
+      fill: false
+    }
+  },
+  {
+    currrentCount: createRandomData(DataLabels.length)[0],
+    title: "Resentment of the Rising Radical Income Inequality",
+    description: "The gap between the billionaire class and the working poor is the greatest at any time in human history since the Pharaohs had their slaves build the pyramids. Despite the modern comforts the underclasses enjoy, they understand and resent this grossly unfair distribution of economic power.",
+    quote: "You get an elite who think they did it all on their own and they deserve their position, and the people who didn’t pass exams and feel left behind. First they think the system is rigged which is a reasonable thing to think and then also partway blame themselves,” he says.“We’ve created this meritocratic aristocracy and people who didn’t make it are pissed off.",
+    dataSet: {
+      data: createRandomData(DataLabels.length),
+      label: "Inequality",
+      borderColor: "#8ea25e",
       fill: false
     }
   },

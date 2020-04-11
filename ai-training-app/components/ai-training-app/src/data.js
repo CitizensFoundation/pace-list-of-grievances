@@ -25,6 +25,42 @@ export const Data = [
   },
   {
     currrentCount: createRandomData(DataLabels.length)[0],
+    title: "Resentment of the Rising Radical Income Inequality",
+    description: "The gap between the billionaire class and the working poor is the greatest at any time in human history since the Pharaohs had their slaves build the pyramids. Despite the modern comforts the underclasses enjoy, they understand and resent this grossly unfair distribution of economic power.",
+    quote: "You get an elite who think they did it all on their own and they deserve their position, and the people who didn’t pass exams and feel left behind. First they think the system is rigged which is a reasonable thing to think and then also partway blame themselves,” he says.“We’ve created this meritocratic aristocracy and people who didn’t make it are pissed off.",
+    dataSet: {
+      data: createRandomData(DataLabels.length),
+      label: "Inequality",
+      borderColor: "#8ea25e",
+      fill: false
+    }
+  },
+  {
+    currrentCount: createRandomData(DataLabels.length)[0],
+    title: "Feeling Ignored/Not Listened To by Politicians/Elites",
+    description: "Harboring many or all of these misgivings, these citizens feel they have spoken up, reached out, perhaps wrote an email to political/journalistic actor in their local or national discourse; almost universally they came away feeling like their concerns were ignored.",
+    quote: "Elites simply don’t understand these voters and find their voting behavior unfathomable because they rarely really interact with them, socialize with them, and, most important, listen to them. And people know it. To quote one voter’s attitude toward elites: “They think that because they’re [so] smart, that their opinion matters more than yours, because you’re not as smart as them.",
+    dataSet: {
+      data: createRandomData(DataLabels.length),
+      label: "Not Listened To",
+      borderColor: "#05c458",
+      fill: false
+    }
+  },
+  {
+    currrentCount: createRandomData(DataLabels.length)[0],
+    title: "Alienated by the Progress of Technology",
+    description: "Dubbed “future shock” over 40 years ago, the progress from pastoral, to agrarian, to industrial, to information age happened at such an accelerated rate that social adaptations and institutions were unable to keep pace. Ideas of no work and no scarcity are therefore beyond comprehension for many.",
+    quote: "The deepening gulf between public and scientific viewpoints lies behind some of the most visible clashes in society, from the blanket rejection of genetically modified organisms, the growth of anti-vaccine campaigns, confrontations between scientists and Creationists, and the dismissal of climate change research.",
+    dataSet: {
+      data: createRandomData(DataLabels.length),
+      label: "Alienated by Technology",
+      borderColor: "#c45850",
+      fill: false
+    }
+  },
+  {
+    currrentCount: createRandomData(DataLabels.length)[0],
     title: "Disintegration of Traditional Family Unit",
     description: "Declining rates of marriage, rising divorce rates, stagnant wages requiring both parents to work full time, growth of childcare as an employment sector -- all add up to anxiety and sense of loss for those who believe in traditional family unit as building block of society.",
     quote: "Despite its widespread social acceptance of single mothers, children who grow up without fathers suffer a host of social, emotional and psychological problems: crime, drugs, promiscuity, teen pregnancy, suicide, and dropouts. That’s not to say single mothers aren’t doing their best; it’s merely to say there’s only so much they can do.",
@@ -49,18 +85,6 @@ export const Data = [
   },
   {
     currrentCount: createRandomData(DataLabels.length)[0],
-    title: "Alienated by the Progress of Technology",
-    description: "Dubbed “future shock” over 40 years ago, the progress from pastoral, to agrarian, to industrial, to information age happened at such an accelerated rate that social adaptations and institutions were unable to keep pace. Ideas of no work and no scarcity are therefore beyond comprehension for many.",
-    quote: "The deepening gulf between public and scientific viewpoints lies behind some of the most visible clashes in society, from the blanket rejection of genetically modified organisms, the growth of anti-vaccine campaigns, confrontations between scientists and Creationists, and the dismissal of climate change research.",
-    dataSet: {
-      data: createRandomData(DataLabels.length),
-      label: "Alienated by Technology",
-      borderColor: "#c45850",
-      fill: false
-    }
-  },
-  {
-    currrentCount: createRandomData(DataLabels.length)[0],
     title: "Fear of Losing Cultural Identity/Ethnic Solidarity/Hegemony",
     description: "As birthrates in the developed world drop below replacement rate, and immigration becomes a driver of electoral demographics, those members of the original regional ethnic group in that country feel their culture, language and values profoundly threatened.",
     quote: "European countries have regarded themselves as more progressive than the home countries of their Middle Eastern immigrants, due in part to their secular orientation. They claim to be more progressive than Islamic countries on women’s rights and civil rights. Muslim minorities living in the West are expected to integrate into the mainstream Western culture and accept its “civilized” values. Yet in much of the West, religion has been replaced by individualism. Many Muslim immigrants contrasting these modern cultures with traditional values see them as decadent and hostile, creating among many a sense of the Western Other.",
@@ -68,18 +92,6 @@ export const Data = [
       data: createRandomData(DataLabels.length),
       label: "Cultural Identity",
       borderColor: "#953ecd",
-      fill: false
-    }
-  },
-  {
-    currrentCount: createRandomData(DataLabels.length)[0],
-    title: "Resentment of the Rising Radical Income Inequality",
-    description: "The gap between the billionaire class and the working poor is the greatest at any time in human history since the Pharaohs had their slaves build the pyramids. Despite the modern comforts the underclasses enjoy, they understand and resent this grossly unfair distribution of economic power.",
-    quote: "You get an elite who think they did it all on their own and they deserve their position, and the people who didn’t pass exams and feel left behind. First they think the system is rigged which is a reasonable thing to think and then also partway blame themselves,” he says.“We’ve created this meritocratic aristocracy and people who didn’t make it are pissed off.",
-    dataSet: {
-      data: createRandomData(DataLabels.length),
-      label: "Inequality",
-      borderColor: "#8ea25e",
       fill: false
     }
   },
@@ -116,18 +128,6 @@ export const Data = [
       data: createRandomData(DataLabels.length),
       label: "Strong Man",
       borderColor: "#b9e8c3",
-      fill: false
-    }
-  },
-  {
-    currrentCount: createRandomData(DataLabels.length)[0],
-    title: "Feeling Ignored/Not Listened To by Politicians/Elites",
-    description: "Harboring many or all of these misgivings, these citizens feel they have spoken up, reached out, perhaps wrote an email to political/journalistic actor in their local or national discourse; almost universally they came away feeling like their concerns were ignored.",
-    quote: "Elites simply don’t understand these voters and find their voting behavior unfathomable because they rarely really interact with them, socialize with them, and, most important, listen to them. And people know it. To quote one voter’s attitude toward elites: “They think that because they’re [so] smart, that their opinion matters more than yours, because you’re not as smart as them.",
-    dataSet: {
-      data: createRandomData(DataLabels.length),
-      label: "Not Listened To",
-      borderColor: "#05c458",
       fill: false
     }
   }
